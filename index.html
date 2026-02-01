@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #000;
+      color: white;
+    }
+
+    .container {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+
+    .slide {
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .slide img {
+      max-width: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+
+    .text {
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    /* Final slide (text only) */
+    .final {
+      font-size: 1.3rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="slide">
+      <img src="photo1.jpg" alt="">
+      <div class="text">This was one of my favourite days ❤️</div>
+    </div>
+
+    <div class="slide">
+      <img src="photo2.jpg" alt="">
+      <div class="text">I still smile every time I see this</div>
+    </div>
+
+    <div class="slide">
+      <img src="photo3.jpg" alt="">
+      <div class="text">You looked so happy here</div>
+    </div>
+
+    <div class="slide">
+      <img src="photo4.jpg" alt="">
+      <div class="text">This moment means more than you know</div>
+    </div>
+
+    <div class="slide">
+      <img src="photo5.jpg" alt="">
+      <div class="text">One of my favourite memories of us</div>
+    </div>
+
+    <!-- Final text-only slide -->
+    <div class="slide final">
+      <p>
+        I just wanted you to know how much you mean to me.<br><br>
+        Every photo here is a reminder of something I’m grateful for.<br><br>
+        ❤️
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
